@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Vid</title>
+    <style>
+        body {
+            background-color: rgb(32, 32, 32);
+        }
+
+        h1 {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color:chocolate;
+            font-size: 45px;
+            
+        }
+
+        p {
+            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color:gold ;
+            font-size: 35px;
+
+        }
+
+        input[type=text], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        }
+
+        input[type=submit] {
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+        background-color: #45a049;
+        }
+
+        div {
+        border-radius: 5px;
+        background-color:transparent;
+        padding: 20px;
+        }
+
+        label {
+            color: whitesmoke;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 25px;
+        }
+
+        ::-moz-selection { /* Code for Firefox */
+        color: white;
+        background: cyan;
+        opacity: 0.6;
+        
+        }
+
+        ::selection {
+        color: white;
+        background: cyan;
+        opacity: 0.6;
+
+        }
+
+            
+    body {
+        overflow-y: hidden; /* Hide vertical scrollbar */
+        overflow-x: hidden; /* Hide horizontal scrollbar */
+    }
+
+    html, body {
+        width: 100%;
+        height:100%;
+    }
+    
+    body {
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+    }
+    
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+
+
+
+    </style>
+</head>
+<body>
+    <center>
+        <div>
+            <form action="/download" method="post">
+              <label for="fname">Download URL</label>
+              <input type="text" id="fname" name="url" placeholder="Site : www.eg-url.com">
+          
+              <label for="lname">Reason For Using This</label>
+              <input type="text" id="lname" name="reason" placeholder="Reason : why do i care">
+          
+              <label for="sites">Site To Download</label>
+              <select id="sites" name="sites">
+                <option value="ytb">idc</option>
+                <option value="ytb">Youtube</option>
+                <option value="fb">Facebook</option>
+                <option value="ig">IGTV</option>
+                <option value="others">others</option>
+
+              </select>
+            
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+          <p>
+            Paste In URL and Will Be redirected To a Link From there Right Click and Download!
+        </p>
+    </center>
+</body>
+</html>
